@@ -1,8 +1,8 @@
 {
-  "name": "FOLC Token List",
+  "name": "Flower Of Life Coin List",
   "logoURI": "https://jeuxenligne.github.io/folc-tokenlist/folc$.png",
-  "keywords": ["folc", "flower of life", "light", "unit"],
-  "timestamp": "2025-07-31T14:00:00+02:00",
+  "keywords": ["folc", "flower", "life", "consciousness"],
+  "timestamp": "2025-07-31T12:00:00+00:00",
   "version": {
     "major": 1,
     "minor": 0,
@@ -12,7 +12,7 @@
     {
       "chainId": 42161,
       "address": "0xBe3e8a2BdfCF7Bbbc68ee26C165f7723Ef2eecDF",
-      "name": "FOLC",
+      "name": "Flower Of Life Coin",
       "symbol": "FOLC",
       "decimals": 18,
       "logoURI": "https://jeuxenligne.github.io/folc-tokenlist/folc$.png"
