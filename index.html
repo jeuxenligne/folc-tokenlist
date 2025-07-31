@@ -2,42 +2,53 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>FOLC - Prévente</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #eee;
-      text-align: center;
-    }
-
-    header {
-      background-color: #1a1a1a;
-      padding: 20px;
-    }
-
-    .logo {
-      max-width: 140px;
-      height: auto;
-    }
-
-    .banniere {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$FOLC Token - Présentation</title>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #f4f4f4;">
 
-  <header>
-    <img src="folc.png" alt="Logo FOLC" class="logo" />
-  </header>
+  <!-- Bannière -->
+  <img src="https://jeuxenligne.github.io/folc-tokenlist/folc-banniere.png" alt="Bannière FOLC" style="max-width: 100%; height: auto; border-radius: 10px;">
 
-  <img src="folc-banniere.png" alt="Bannière FOLC" class="banniere" />
+  <!-- Logo -->
+  <h1 style="margin-top: 30px;">Token $FOLC</h1>
+  <img src="https://jeuxenligne.github.io/folc-tokenlist/folc$.png" alt="Logo FOLC" style="width: 150px; height: auto; margin: 20px auto; display: block;">
+
+  <!-- Bouton pour ajouter $FOLC à MetaMask -->
+  <button onclick="addFOLCtoMetaMask()" style="padding: 12px 24px; font-size: 16px; background-color: #f4c542; color: black; border: none; border-radius: 8px; cursor: pointer; margin-top: 30px;">
+    Ajouter $FOLC dans MetaMask
+  </button>
+
+  <script>
+    async function addFOLCtoMetaMask() {
+      try {
+        const wasAdded = await window.ethereum.request({
+          method: 'wallet_watchAsset',
+          params: {
+            type: 'ERC20',
+            options: {
+              address: '0xBe3e8a2BdfCF7Bbbc68ee26C165f7723Ef2eecDF',
+              symbol: 'FOLC',
+              decimals: 18,
+              image: 'https://jeuxenligne.github.io/folc-tokenlist/folc$.png',
+            },
+          },
+        });
+
+        if (wasAdded) {
+          alert('Le token $FOLC a été ajouté à MetaMask !');
+        } else {
+          alert('Le token $FOLC n’a pas été ajouté.');
+        }
+      } catch (error) {
+        console.log(error);
+        alert("Erreur lors de l'ajout dans MetaMask.");
+      }
+    }
+  </script>
 
 </body>
 </html>
+
+
+
