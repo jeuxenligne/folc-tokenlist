@@ -71,11 +71,43 @@
       background-color: #444;
     }
 
-    .footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #888;
+    /* Section Tokenomics */
+    .tokenomics {
+      max-width: 700px;
+      margin: 20px auto 40px auto;
       padding: 20px;
+      background: #f7f7f7;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: left;
+      font-size: 1em;
+      color: #333;
+    }
+    .tokenomics h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+    .tokenomics ul {
+      list-style-type: none;
+      padding-left: 0;
+      line-height: 1.6;
+    }
+    .tokenomics ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Footer amélioré */
+    footer {
+      width: 100%;
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9em;
+      margin-top: 60px;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
     }
 
     @media (max-width: 600px) {
@@ -86,6 +118,10 @@
 
       .content p {
         font-size: 1em;
+      }
+
+      .tokenomics {
+        margin: 20px 10px 40px 10px;
       }
     }
   </style>
@@ -110,11 +146,27 @@ dans un monde en attente.
     </div>
   </div>
 
-  <div class="footer">
-    © FOLC 2025
-  </div>
+  <section class="tokenomics" aria-label="Informations Tokenomics">
+    <h2>Tokenomics</h2>
+    <ul>
+      <li><strong>Nom :</strong> Flower Of Life Coin (FOLC)</li>
+      <li><strong>Réseau :</strong> Arbitrum One</li>
+      <li><strong>Adresse du contrat :</strong> <code>0xBe3e8a2BdfCF7Bbbc68ee26C165f7723Ef2eecDF</code></li>
+      <li><strong>Supply totale :</strong> 3 333 333 333 FOLC</li>
+      <li><strong>Utilisation :</strong> Prévente, staking, gouvernance, transformation collective</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 FOLC – Flower Of Life Coin. Porté par la lumière silencieuse.
+  </footer>
 </body>
 </html>
+
+
+ 
+   
+
 
     
    
